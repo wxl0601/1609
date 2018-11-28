@@ -6,8 +6,11 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
     <link rel="stylesheet" href="fonts/iconfont.css">
+    <link rel="stylesheet" href="scripts/swiper.min.css">
     <link rel="stylesheet" href="css/index.css">
+    <script src="scripts/rem.js"></script>
     <script src="scripts/better-scroll.js"></script>
+    <script src="scripts/swiper.min.js"></script>
 </head>
 <body>
 
@@ -22,8 +25,12 @@
             </div>
         </nav>
 
+
         <div class="caidan">
-            <dl>
+
+            <div class="swiper-container">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide"> <dl>
                 <dt> <img src="images/1.png" alt=""> </dt>
                 <dd>美团外卖</dd>
             </dl>
@@ -62,7 +69,91 @@
                                             <dl>
                                                     <dt> <img src="images/10.jpg" alt=""> </dt>
                                                     <dd>美团外卖</dd>
+                                                </dl></div>
+                    <div class="swiper-slide"> <dl>
+                            <dt> <img src="images/1.png" alt=""> </dt>
+                            <dd>美团外卖</dd>
+                        </dl>
+                        <dl>
+                                <dt> <img src="images/2.png" alt=""> </dt>
+                                <dd>美团外卖</dd>
+                            </dl>
+                            <dl>
+                                    <dt> <img src="images/3.png" alt=""> </dt>
+                                    <dd>美团外卖</dd>
+                                </dl>
+                                <dl>
+                                        <dt> <img src="images/4.png" alt=""> </dt>
+                                        <dd>美团外卖</dd>
+                                    </dl>
+                                    <dl>
+                                            <dt> <img src="images/5.jpg" alt=""> </dt>
+                                            <dd>美团外卖</dd>
+                                        </dl>
+                                        <dl>
+                                                <dt> <img src="images/6.jpg" alt=""> </dt>
+                                                <dd>美团外卖</dd>
+                                            </dl>
+                                            <dl>
+                                                    <dt> <img src="images/7.png" alt=""> </dt>
+                                                    <dd>美团外卖</dd>
                                                 </dl>
+                                                <dl>
+                                                        <dt> <img src="images/8.jpg" alt=""> </dt>
+                                                        <dd>美团外卖</dd>
+                                                    </dl>
+                                                    <dl>
+                                                            <dt> <img src="images/9.png" alt=""> </dt>
+                                                            <dd>美团外卖</dd>
+                                                        </dl>
+                                                        <dl>
+                                                                <dt> <img src="images/10.jpg" alt=""> </dt>
+                                                                <dd>美团外卖</dd>
+                                                            </dl></div>
+                    <div class="swiper-slide"> <dl>
+                            <dt> <img src="images/1.png" alt=""> </dt>
+                            <dd>美团外卖</dd>
+                        </dl>
+                        <dl>
+                                <dt> <img src="images/2.png" alt=""> </dt>
+                                <dd>美团外卖</dd>
+                            </dl>
+                            <dl>
+                                    <dt> <img src="images/3.png" alt=""> </dt>
+                                    <dd>美团外卖</dd>
+                                </dl>
+                                <dl>
+                                        <dt> <img src="images/4.png" alt=""> </dt>
+                                        <dd>美团外卖</dd>
+                                    </dl>
+                                    <dl>
+                                            <dt> <img src="images/5.jpg" alt=""> </dt>
+                                            <dd>美团外卖</dd>
+                                        </dl>
+                                        <dl>
+                                                <dt> <img src="images/6.jpg" alt=""> </dt>
+                                                <dd>美团外卖</dd>
+                                            </dl>
+                                            <dl>
+                                                    <dt> <img src="images/7.png" alt=""> </dt>
+                                                    <dd>美团外卖</dd>
+                                                </dl>
+                                                <dl>
+                                                        <dt> <img src="images/8.jpg" alt=""> </dt>
+                                                        <dd>美团外卖</dd>
+                                                    </dl>
+                                                    <dl>
+                                                            <dt> <img src="images/9.png" alt=""> </dt>
+                                                            <dd>美团外卖</dd>
+                                                        </dl>
+                                                        <dl>
+                                                                <dt> <img src="images/10.jpg" alt=""> </dt>
+                                                                <dd>美团外卖</dd>
+                                                            </dl></div>
+                </div>
+                <div class="swiper-pagination"></div>
+            </div>
+           
 
         </div>
 
@@ -86,7 +177,14 @@
     <script>
 
         var better = new BScroll('.wrapper')
-    
+        var Swiper = new Swiper(".swiper-container",{
+            autoplay:true,
+            loop:true,
+            pagination:{
+                el:".swiper-pagination",
+                clickable:true
+            }
+        })
     </script>
 
 </body>

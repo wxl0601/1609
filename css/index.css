@@ -191,6 +191,7 @@ html {
   display: -webkit-flex;
   /* NEW - Chrome */
   flex-direction: column;
+  font-size: 0.13333rem;
 }
 
 .box header {
@@ -202,13 +203,14 @@ html {
   /* NEW - Chrome */
   -webkit-justify-content: flex-start;
   justify-content: flex-start;
-  font-size: 0.66667rem;
+  font-size: 0.13333rem;
   font-weight: bold;
 }
 
 .box header span {
   margin-top: 0.13333rem;
   margin-left: 0.13333rem;
+  font-size: 0.16rem;
 }
 
 .box nav {
@@ -224,7 +226,7 @@ html {
 
 .box nav .forms {
   width: 95%;
-  height: 1.06667rem;
+  height: 0.26667rem;
   display: flex;
   /* NEW, Spec - Opera 12.1, Firefox 20+ */
   display: -webkit-flex;
@@ -233,57 +235,62 @@ html {
   justify-content: flex-start;
   border-radius: 0.18667rem;
   background: #f0f1f2;
-  line-height: 1.06667rem;
+  line-height: 0.10667rem;
 }
 
 .box nav .forms input {
   width: 90%;
   height: 70%;
   background: #f0f1f2;
-  margin-top: 0.16rem;
+  margin-top: 0.02667rem;
 }
 
 .box nav .forms input::placeholder {
   color: #666666;
-  font-size: 0.8rem;
+  font-size: 0.13333rem;
 }
 
 .box nav .forms i {
   margin-left: 0.18667rem;
-  font-size: 0.69333rem;
+  font-size: 0.13333rem;
+  margin-top: 0.10667rem;
 }
 
 .box .caidan {
   width: 100%;
-  height: 4.26667rem;
+  height: 1.06667rem;
   margin-top: 0.26667rem;
 }
 
 .box .caidan dl {
   float: left;
   width: 20%;
-  height: 2.13333rem;
+  height: 0.53333rem;
 }
 
 .box .caidan dl > dt {
   width: 100%;
-  height: 1.6rem;
+  height: 0.4rem;
   text-align: center;
+  display: flex;
+  /* NEW, Spec - Opera 12.1, Firefox 20+ */
+  display: -webkit-flex;
+  /* NEW - Chrome */
   line-height: 1.6rem;
 }
 
 .box .caidan dl > dt img {
-  width: 1.2rem;
-  height: 1.2rem;
-  margin-top: 0.26667rem;
+  width: 0.32rem;
+  height: 0.32rem;
+  margin-left: 0.18667rem;
 }
 
 .box .caidan dl > dd {
   text-align: center;
   width: 100%;
-  line-height: 0.53333rem;
-  height: 0.53333rem;
-  font-size: 0.26667rem;
+  line-height: 0.13333rem;
+  height: 0.13333rem;
+  font-size: 0.13333rem;
 }
 
 .box .wrapper {
@@ -298,4 +305,10 @@ html {
   border-bottom: 1px solid #000;
   text-align: center;
   line-height: 2.66667rem;
+}
+
+.swiper-container {
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
 }
